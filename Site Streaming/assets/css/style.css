@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg0: #c2d1b0;
+    --bg1: #0088F2;
+    --bg2: #01C598;
+
+    --bg3: #003964;
+    --bg4: #161616;
+
+    --branco: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--branco);
+}
+
+body {
+    background-color: var(--bg0);
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    background: linear-gradient(to right, var(--bg1), var(--bg2));
+
+    position: absolute;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    padding: 0.5rem 0;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+nav i {
+    font-size: 4rem;
+}
+
+.logotipo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.logotipo i, .logotipo span{
+    font-size: 4rem;
+    color: white;
+}
+
+.logotipo i:hover, .logotipo span:hover{
+    cursor: pointer;
+    color: var(--bg2);
+    transition: 0.5s;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil img{
+    border-radius: 4rem;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.perfil span {
+    font-family: "Poppins", sans-serif;
+}
+
+.perfil img:hover{
+    transform: scale(1.10);
+}
+
+.barra-de-pesquisa {
+    outline: none;    
+    border-radius: 100px;
+    padding: 0.3rem 1rem;
+    border: none;
+
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+
+    background-color: var(--bg0);
+    
+    color: var(--bg4);
+    caret-color: var(--bg4);
+
+    width: 500px;
+}
+
+/* ======================================= */
+
+.container {
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-avaliable;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ============================ */
+
+
+.filme, .serie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    max-height: 200px;
+
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.filme img, .serie img{
+    height: 150px;
+    width: 150px;
+}
+
+.filme:hover {
+    transform: scale(1.1);
+}
+
+.filme span, .serie span{
+    font-family: "Poppins", sans-serif;
+    color: var(--bg4);
+}
+
+.serie:hover{
+    transform: rotate(3deg);
+    filter: brightness(1.3);
+}
