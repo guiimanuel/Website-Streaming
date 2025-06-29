@@ -1,2 +1,5 @@
 # Website-Streaming
-WebSIte Streaming. HTML e CSS.
+WebSite Streaming. HTML e CSS.
+
+Landing page.
+Feita com base em um site streaming qualquer.
